@@ -6,13 +6,12 @@
 %   Classifies linearly separable samples using the Perceptron cost
 %   function
 % INPUTS
-%   X           (mat)       (MxN+1)     Training data points with ones
-%                                       appended for the bias calculation.
-%   y           (vector)    (Mx1)       Vector of training labels
-%   u           (scalar)                Scalar indicating step size, usually 1 
-%   epoch       (scalar)                Scalar indicating iterations. 
+%   X               (mat)           (MxN+1)         Training data points with ones appended for the bias calculation.
+%   y               (vector)       (Mx1)              Vector of training labels
+%   u               (scalar)                                Scalar indicating step size, usually 1 
+%   epoch      (scalar)                                Scalar indicating iterations. 
 % OUTPUT
-%   theta       (vector)    (N+1x1)     Vector indicating learnt parameters    
+%   theta       (vector)       (N+1x1)          Vector indicating learnt parameters    
 % AUTHOR
 %   Rohit Kashyap , November 2018
 
