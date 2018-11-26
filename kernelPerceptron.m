@@ -6,12 +6,12 @@ function f = kernelPerceptron(y,K,N,epoch)
 % DESCRIPTION
 %   Classifies linearly separable samples using Kernel Perceptron.
 % INPUTS
-%   K           (mat)       (NxN)       Kernel Matrix
-%   y           (vector)    (Mx1)       Vector of training labels
-%   N           (scalar)                Scalar indicating sample size
-%   epoch       (scalar)                Scalar indicating iterations. 
+%   K                    (mat)           (NxN)      Kernel Matrix
+%   y                    (vector)       (Mx1)      Vector of training labels
+%   N                   (scalar)                        Scalar indicating sample size
+%   epoch          (scalar)                         Scalar indicating iterations. 
 % OUTPUT
-%   f           (vector)    (Nx1)       Vector indicating decision.    
+%   f                    (vector)       (Nx1)       Vector indicating decision.    
 % AUTHOR
 %   Rohit Kashyap , November 2018
 
