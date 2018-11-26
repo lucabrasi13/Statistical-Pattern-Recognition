@@ -15,8 +15,11 @@ function f = kernelPerceptron(y,K,N,epoch)
 % AUTHOR
 %   Rohit Kashyap , November 2018
 
+%% Initialization
     a = zeros(N,1); 
     counter = Inf;
+    
+%% Kernel Perceptron algorithm    
     while(counter~=0)
         counter = 0;
         for i = 1:N
@@ -30,12 +33,13 @@ function f = kernelPerceptron(y,K,N,epoch)
                 counter = counter+1;
             end
         end
-        epoch = epoch - 1;
+        epoch = epoch - 1;                                              % Stop iff no linear separability
         if(epoch == 0)
             counter = 0;
         end
     end
     
+%% Decision based on binary hypothesis testing    
     f(N,1) = 0;
     for i = 1:N
         temp1 = 0;temp2 = 0;
@@ -45,5 +49,7 @@ function f = kernelPerceptron(y,K,N,epoch)
         end
         f(i) = temp1 + temp2;
     end
+
+%% Return the sign of the decision
     f = sign(f);
 end
