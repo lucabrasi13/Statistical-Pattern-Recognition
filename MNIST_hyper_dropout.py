@@ -90,7 +90,8 @@ for i in range(0,M):
 plt.plot(DROPOUT,val_accuracy)
 plt.title('DROPOUT tuning')
 plt.ylabel('Accuracy -->')
-plt.xlabel('epoch -->')
-plt.legend(['accuracy'], loc='upper left')
+plt.xlabel('Dropout Rate -->')
+plt.legend(['Accuracy'], loc='upper right')
+plt.grid('True')
 plt.show()
 
