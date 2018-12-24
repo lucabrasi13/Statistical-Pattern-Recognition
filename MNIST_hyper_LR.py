@@ -52,7 +52,7 @@ global VALIDATION_SPLIT
 global DROPOUT
 
 # Global declaration of a few parameters
-NB_EPOCH = 2
+NB_EPOCH = 20
 BATCH_SIZE = 128
 VERBOSE = 1
 NB_CLASSES = 10
